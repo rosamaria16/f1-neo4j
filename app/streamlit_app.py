@@ -21,9 +21,54 @@ st.markdown("""
     }
     .sub-header {
         font-size: 1.3rem;
-        color: #888;
+        color: var(--text-color, inherit);
+        opacity: 0.7;
         text-align: center;
         margin-bottom: 2rem;
+    }
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+    }
+    .custom-table th {
+        border: 1px solid var(--border-color);
+        padding: 8px;
+        text-align: left;
+        background-color: var(--header-bg);
+    }
+    .custom-table td {
+        border: 1px solid var(--border-color);
+        padding: 8px;
+        vertical-align: top;
+    }
+    
+    /* Light theme */
+    @media (prefers-color-scheme: light) {
+        :root {
+            --border-color: #ddd;
+            --header-bg: #f5f5f5;
+        }
+    }
+    
+    /* Dark theme */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --border-color: #444;
+            --header-bg: #1e1e1e;
+        }
+    }
+    
+    /* Streamlit theme detection fallback */
+    [data-testid="stAppViewContainer"] {
+        --border-color: #ddd;
+        --header-bg: #f5f5f5;
+    }
+    [data-testid="stAppViewContainer"][data-theme="dark"],
+    .stApp[data-theme="dark"] [data-testid="stAppViewContainer"],
+    html[data-theme="dark"] [data-testid="stAppViewContainer"] {
+        --border-color: #444;
+        --header-bg: #1e1e1e;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -63,17 +108,15 @@ def has_complex_data(results: list) -> bool:
 
 def render_html_table(results: list):
     headers = list(results[0].keys())
-    th = "border:1px solid #444;padding:8px;text-align:left;background:#1e1e1e;color:#fff;"
-    td = "border:1px solid #444;padding:8px;vertical-align:top;color:#eee;"
     
     rows = []
     for record in results:
-        cells = [f'<td style="{td}">{format_value(record.get(h, ""))}</td>' for h in headers]
+        cells = [f'<td>{format_value(record.get(h, ""))}</td>' for h in headers]
         rows.append("<tr>" + "".join(cells) + "</tr>")
     
     html = f'''
-    <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
-        <tr>{"".join(f'<th style="{th}">{h}</th>' for h in headers)}</tr>
+    <table class="custom-table">
+        <tr>{"".join(f'<th>{h}</th>' for h in headers)}</tr>
         {"".join(rows)}
     </table>
     '''
