@@ -215,7 +215,7 @@ LIMIT 10
 """
 
 QUERY_TEAMMATE_CHAIN = """
-MATCH path = shortestPath(
+MATCH path = SHORTEST 1 (
     (d1:Driver {driver_id: $driver1})-[:DROVE_FOR*]-(d2:Driver {driver_id: $driver2})
 )
 WITH nodes(path) AS nodos
