@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 from neo4j_connection import get_session
 from query_categories import *
 
@@ -8,68 +9,89 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.markdown("""
+def load_font(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+    
+f1_regular = load_font("resources/Formula1-Regular.otf")
+f1_bold = load_font("resources/Formula1-Bold.otf")
+
+st.markdown(f"""
 <style>
-    .main-header {
-        font-size: 4rem;
+    @font-face {{
+        font-family: 'F1Regular';
+        src: url(data:font/otf;base64,{f1_regular}) format('opentype');
+    }}
+
+    @font-face {{
+        font-family: 'F1Bold';
+        src: url(data:font/otf;base64,{f1_bold}) format('opentype');
+    }}
+
+    .main-header {{
+        font-family: 'F1Bold' !important;
+        font-size: 50px !important;
         font-weight: 800;
         color: #E10600;
         text-align: center;
         margin-bottom: 0.5rem;
         text-transform: uppercase;
         letter-spacing: 2px;
-    }
-    .sub-header {
+    }}
+
+    .sub-header {{
+        font-family: 'F1Regular' !important;
         font-size: 1.3rem;
         color: var(--text-color, inherit);
         opacity: 0.7;
         text-align: center;
         margin-bottom: 2rem;
-    }
-    .custom-table {
+    }}
+
+    .custom-table {{
         width: 100%;
         border-collapse: collapse;
         font-size: 0.9rem;
-    }
-    .custom-table th {
+    }}
+
+    .custom-table th {{
         border: 1px solid var(--border-color);
         padding: 8px;
         text-align: left;
         background-color: var(--header-bg);
-    }
-    .custom-table td {
+    }}
+
+    .custom-table td {{
         border: 1px solid var(--border-color);
         padding: 8px;
         vertical-align: top;
-    }
-    
-    /* Light theme */
-    @media (prefers-color-scheme: light) {
-        :root {
+    }}
+
+    @media (prefers-color-scheme: light) {{
+        :root {{
             --border-color: #ddd;
             --header-bg: #f5f5f5;
-        }
-    }
-    
-    /* Dark theme */
-    @media (prefers-color-scheme: dark) {
-        :root {
+        }}
+    }}
+
+    @media (prefers-color-scheme: dark) {{
+        :root {{
             --border-color: #444;
             --header-bg: #1e1e1e;
-        }
-    }
-    
-    /* Streamlit theme detection fallback */
-    [data-testid="stAppViewContainer"] {
+        }}
+    }}
+
+    [data-testid="stAppViewContainer"] {{
         --border-color: #ddd;
         --header-bg: #f5f5f5;
-    }
+    }}
+
     [data-testid="stAppViewContainer"][data-theme="dark"],
     .stApp[data-theme="dark"] [data-testid="stAppViewContainer"],
-    html[data-theme="dark"] [data-testid="stAppViewContainer"] {
+    html[data-theme="dark"] [data-testid="stAppViewContainer"] {{
         --border-color: #444;
         --header-bg: #1e1e1e;
-    }
+    }}
 </style>
 """, unsafe_allow_html=True)
 
