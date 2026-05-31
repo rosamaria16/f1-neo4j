@@ -1,0 +1,26 @@
+circuit_id,name,country,circuit_type
+silverstone,Silverstone Circuit,UK,permanent
+monaco,Circuit de Monaco,Monaco,street
+spa,Circuit de Spa-Francorchamps,Belgium,permanent
+monza,Autodromo Nazionale di Monza,Italy,permanent
+zandvoort,Circuit Park Zandvoort,Netherlands,permanent
+rodriguez,Autódromo Hermanos Rodríguez,Mexico,permanent
+red_bull_ring,Red Bull Ring,Austria,permanent
+ricard,Circuit Paul Ricard,France,permanent
+interlagos,Interlagos Circuit,Brazil,permanent
+villeneuve,Circuit Gilles Villeneuve,Canada,hybrid
+imola,Autodromo Internazionale Enzo e Dino Ferrari,Italy,permanent
+vegas,Las Vegas Street Circuit,USA,street
+hungaroring,Hungaroring,Hungary,permanent
+suzuka,Suzuka Circuit,Japan,permanent
+catalunya,Circuit de Barcelona-Catalunya,Spain,permanent
+albert_park,Albert Park Grand Prix Circuit,Australia,hybrid
+bahrain,Bahrain International Circuit,Bahrain,permanent
+shanghai,Shanghai International Circuit,China,permanent
+marina_bay,Marina Bay Street Circuit,Singapore,street
+yas_marina,Yas Marina Circuit,UAE,permanent
+americas,Circuit of the Americas,USA,permanent
+baku,Baku City Circuit,Azerbaijan,street
+losail,Losail International Circuit,Qatar,permanent
+jeddah,Jeddah Corniche Circuit,Saudi Arabia,street
+miami,Miami International Autodrome,USA,hybrid

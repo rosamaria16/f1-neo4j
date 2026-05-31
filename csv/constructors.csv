@@ -1,0 +1,13 @@
+constructor_id,name,nationality,predecessor,
+red_bull,Red Bull,Austrian,
+ferrari,Ferrari,Italian,
+mercedes,Mercedes,German,
+alpine,Alpine,French,
+mclaren,McLaren,British,
+alfa,Alfa Romeo,Swiss,sauber
+aston_martin,Aston Martin,British,
+haas,Haas,American,
+alphatauri,AlphaTauri,Italian,
+williams,Williams,British,
+sauber,Sauber,Swiss,alfa
+rb,Racing Bulls,Italian,alphatauri

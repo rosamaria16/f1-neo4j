@@ -1,0 +1,93 @@
+race_id,season,round,race_name,circuit_id
+2022_1,2022,1,Bahrain Grand Prix,bahrain
+2022_2,2022,2,Saudi Arabian Grand Prix,jeddah
+2022_3,2022,3,Australian Grand Prix,albert_park
+2022_4,2022,4,Emilia Romagna Grand Prix,imola
+2022_5,2022,5,Miami Grand Prix,miami
+2022_6,2022,6,Spanish Grand Prix,catalunya
+2022_7,2022,7,Monaco Grand Prix,monaco
+2022_8,2022,8,Azerbaijan Grand Prix,baku
+2022_9,2022,9,Canadian Grand Prix,villeneuve
+2022_10,2022,10,British Grand Prix,silverstone
+2022_11,2022,11,Austrian Grand Prix,red_bull_ring
+2022_12,2022,12,French Grand Prix,ricard
+2022_13,2022,13,Hungarian Grand Prix,hungaroring
+2022_14,2022,14,Belgian Grand Prix,spa
+2022_15,2022,15,Dutch Grand Prix,zandvoort
+2022_16,2022,16,Italian Grand Prix,monza
+2022_17,2022,17,Singapore Grand Prix,marina_bay
+2022_18,2022,18,Japanese Grand Prix,suzuka
+2022_19,2022,19,United States Grand Prix,americas
+2022_20,2022,20,Mexico City Grand Prix,rodriguez
+2022_21,2022,21,São Paulo Grand Prix,interlagos
+2022_22,2022,22,Abu Dhabi Grand Prix,yas_marina
+2023_1,2023,1,Bahrain Grand Prix,bahrain
+2023_2,2023,2,Saudi Arabian Grand Prix,jeddah
+2023_3,2023,3,Australian Grand Prix,albert_park
+2023_4,2023,4,Azerbaijan Grand Prix,baku
+2023_5,2023,5,Miami Grand Prix,miami
+2023_6,2023,6,Monaco Grand Prix,monaco
+2023_7,2023,7,Spanish Grand Prix,catalunya
+2023_8,2023,8,Canadian Grand Prix,villeneuve
+2023_9,2023,9,Austrian Grand Prix,red_bull_ring
+2023_10,2023,10,British Grand Prix,silverstone
+2023_11,2023,11,Hungarian Grand Prix,hungaroring
+2023_12,2023,12,Belgian Grand Prix,spa
+2023_13,2023,13,Dutch Grand Prix,zandvoort
+2023_14,2023,14,Italian Grand Prix,monza
+2023_15,2023,15,Singapore Grand Prix,marina_bay
+2023_16,2023,16,Japanese Grand Prix,suzuka
+2023_17,2023,17,Qatar Grand Prix,losail
+2023_18,2023,18,United States Grand Prix,americas
+2023_19,2023,19,Mexico City Grand Prix,rodriguez
+2023_20,2023,20,São Paulo Grand Prix,interlagos
+2023_21,2023,21,Las Vegas Grand Prix,vegas
+2023_22,2023,22,Abu Dhabi Grand Prix,yas_marina
+2024_1,2024,1,Bahrain Grand Prix,bahrain
+2024_2,2024,2,Saudi Arabian Grand Prix,jeddah
+2024_3,2024,3,Australian Grand Prix,albert_park
+2024_4,2024,4,Japanese Grand Prix,suzuka
+2024_5,2024,5,Chinese Grand Prix,shanghai
+2024_6,2024,6,Miami Grand Prix,miami
+2024_7,2024,7,Emilia Romagna Grand Prix,imola
+2024_8,2024,8,Monaco Grand Prix,monaco
+2024_9,2024,9,Canadian Grand Prix,villeneuve
+2024_10,2024,10,Spanish Grand Prix,catalunya
+2024_11,2024,11,Austrian Grand Prix,red_bull_ring
+2024_12,2024,12,British Grand Prix,silverstone
+2024_13,2024,13,Hungarian Grand Prix,hungaroring
+2024_14,2024,14,Belgian Grand Prix,spa
+2024_15,2024,15,Dutch Grand Prix,zandvoort
+2024_16,2024,16,Italian Grand Prix,monza
+2024_17,2024,17,Azerbaijan Grand Prix,baku
+2024_18,2024,18,Singapore Grand Prix,marina_bay
+2024_19,2024,19,United States Grand Prix,americas
+2024_20,2024,20,Mexico City Grand Prix,rodriguez
+2024_21,2024,21,São Paulo Grand Prix,interlagos
+2024_22,2024,22,Las Vegas Grand Prix,vegas
+2024_23,2024,23,Qatar Grand Prix,losail
+2024_24,2024,24,Abu Dhabi Grand Prix,yas_marina
+2025_1,2025,1,Australian Grand Prix,albert_park
+2025_2,2025,2,Chinese Grand Prix,shanghai
+2025_3,2025,3,Japanese Grand Prix,suzuka
+2025_4,2025,4,Bahrain Grand Prix,bahrain
+2025_5,2025,5,Saudi Arabian Grand Prix,jeddah
+2025_6,2025,6,Miami Grand Prix,miami
+2025_7,2025,7,Emilia Romagna Grand Prix,imola
+2025_8,2025,8,Monaco Grand Prix,monaco
+2025_9,2025,9,Spanish Grand Prix,catalunya
+2025_10,2025,10,Canadian Grand Prix,villeneuve
+2025_11,2025,11,Austrian Grand Prix,red_bull_ring
+2025_12,2025,12,British Grand Prix,silverstone
+2025_13,2025,13,Belgian Grand Prix,spa
+2025_14,2025,14,Hungarian Grand Prix,hungaroring
+2025_15,2025,15,Dutch Grand Prix,zandvoort
+2025_16,2025,16,Italian Grand Prix,monza
+2025_17,2025,17,Azerbaijan Grand Prix,baku
+2025_18,2025,18,Singapore Grand Prix,marina_bay
+2025_19,2025,19,United States Grand Prix,americas
+2025_20,2025,20,Mexico City Grand Prix,rodriguez
+2025_21,2025,21,São Paulo Grand Prix,interlagos
+2025_22,2025,22,Las Vegas Grand Prix,vegas
+2025_23,2025,23,Qatar Grand Prix,losail
+2025_24,2025,24,Abu Dhabi Grand Prix,yas_marina
