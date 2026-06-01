@@ -1,10 +1,10 @@
 # F1 Analytics
 
-**Autora:** Rosa María Espinosa Martínez, rosespmar@alum.us.es
-**Asignatura:** Complemento de base de datos. Grado en Ingeniería Informática - Ingeniería del Software. Universidad de Sevilla.
-**Curso académico:** 2025/2026
-**Repositorio:** https://github.com/rosamaria16/F1-Analytics
-**Enlace al despliegue:** https://f1-analytics-neo4j.streamlit.app/
+- **Autora:** Rosa María Espinosa Martínez, rosespmar@alum.us.es
+- **Asignatura:** Complemento de base de datos. Grado en Ingeniería Informática - Ingeniería del Software. Universidad de Sevilla.
+- **Curso académico:** 2025/2026
+- **Repositorio:** https://github.com/rosamaria16/F1-Analytics
+- **Enlace al despliegue:** https://f1-analytics-neo4j.streamlit.app/
 
 
 ## Descripción
