@@ -1,7 +1,7 @@
 import streamlit as st
 import base64
 from neo4j_connection import get_session
-from query_categories import *
+from query_categories import QUERY_CATEGORIES, get_drivers_list, get_seasons_list
 
 st.set_page_config(
     page_title="F1 Analytics",
@@ -30,7 +30,7 @@ st.markdown(f"""
 
     .main-header {{
         font-family: 'F1Bold' !important;
-        font-size: 50px !important;
+        font-size: 40px !important;
         font-weight: 800;
         color: #E10600;
         text-align: center;
@@ -55,42 +55,20 @@ st.markdown(f"""
     }}
 
     .custom-table th {{
-        border: 1px solid var(--border-color);
+        border: 1px solid rgba(128, 128, 128, 0.3);
         padding: 8px;
         text-align: left;
-        background-color: var(--header-bg);
+        background-color: rgba(128, 128, 128, 0.2);
     }}
 
     .custom-table td {{
-        border: 1px solid var(--border-color);
+        border: 1px solid rgba(128, 128, 128, 0.3);
         padding: 8px;
         vertical-align: top;
     }}
 
-    @media (prefers-color-scheme: light) {{
-        :root {{
-            --border-color: #ddd;
-            --header-bg: #f5f5f5;
-        }}
-    }}
-
-    @media (prefers-color-scheme: dark) {{
-        :root {{
-            --border-color: #444;
-            --header-bg: #1e1e1e;
-        }}
-    }}
-
-    [data-testid="stAppViewContainer"] {{
-        --border-color: #ddd;
-        --header-bg: #f5f5f5;
-    }}
-
-    [data-testid="stAppViewContainer"][data-theme="dark"],
-    .stApp[data-theme="dark"] [data-testid="stAppViewContainer"],
-    html[data-theme="dark"] [data-testid="stAppViewContainer"] {{
-        --border-color: #444;
-        --header-bg: #1e1e1e;
+    .custom-table tr:nth-child(even) td {{
+        background-color: rgba(128, 128, 128, 0.1);
     }}
 </style>
 """, unsafe_allow_html=True)
@@ -175,27 +153,9 @@ def render_param_input(param_name: str, param_config: dict, query_key: str) -> a
             format_func=lambda x: next((d["fullName"] for d in drivers if d["driver_id"] == x), x),
             key=key
         )
-    elif param_type == "constructor":
-        constructors = get_constructors_list()
-        return st.selectbox(
-            label,
-            options=[c["constructor_id"] for c in constructors],
-            format_func=lambda x: next((c["name"] for c in constructors if c["constructor_id"] == x), x),
-            key=key
-        )
     elif param_type == "season":
         seasons = get_seasons_list()
         return st.selectbox(label, options=[s["season"] for s in seasons], key=key)
-    elif param_type == "number":
-        return st.number_input(
-            label,
-            min_value=param_config.get("min", 1),
-            max_value=param_config.get("max", 100),
-            value=param_config.get("default", 10),
-            key=key
-        )
-    elif param_type == "select":
-        return st.selectbox(label, options=param_config["options"], key=key)
     return None
 
 

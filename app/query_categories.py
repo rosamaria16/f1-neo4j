@@ -14,19 +14,6 @@ def get_drivers_list() -> list:
     except:
         return []
 
-
-def get_constructors_list() -> list:
-    try:
-        with get_session() as session:
-            result = session.run("""
-                MATCH (c:Constructor)
-                RETURN c.constructor_id AS constructor_id, c.name AS name
-                ORDER BY c.name
-            """)
-            return [dict(r) for r in result]
-    except:
-        return []
-
 def get_seasons_list() -> list:
     try:
         with get_session() as session:
