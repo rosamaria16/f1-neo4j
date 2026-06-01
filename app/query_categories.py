@@ -178,7 +178,7 @@ QUERY_CATEGORIES = {
                 """
             },
             "most_teams": {
-                "name": "Piloto con más equipos",
+                "name": "Pilotos con más equipos",
                 "description": "¿Qué pilotos han corrido para más equipos?",
                 "query": getattr(queries, "QUERY_DRIVERS_MOST_DIFFERENT_TEAMS"),
                 "display": "table"

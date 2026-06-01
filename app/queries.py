@@ -150,7 +150,7 @@ RETURN d.fullName AS piloto,
        ultima_temporada - primera_temporada + 1 AS temporadas_activo,
        round(1.0*num_equipos/(ultima_temporada-primera_temporada + 1), 2) AS equipos_por_temporada
 ORDER BY num_equipos DESC, equipos_por_temporada DESC
-LIMIT 10
+LIMIT 5
 """
 
 QUERY_DRIVER_NETWORK = """
